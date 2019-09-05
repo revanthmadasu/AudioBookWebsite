@@ -12,6 +12,7 @@ export class DisplayBooksComponent implements OnInit {
   constructor(public _service:BooksService) { }
 
   ngOnInit() {
+    this.books=this._service.getIndianBooks();
   }
   public indianBooks():void
   {
