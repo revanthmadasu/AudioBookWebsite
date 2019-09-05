@@ -1,22 +1,31 @@
-<div class="heading">
+<div class="flex-container heading">
 <h2><b>Try an Audible audiobook, on us</b></h2>
 <h3>Here are some of our favourites to get you started. Listen to a sample by clicking on a play button.</h3>
-</div>
+
 <div class='container sellers-tab'>
 <ul class='list-inline'>
     <li>
-        <a routerLink='/indianBestSellers'>Indian Best Sellers</a>
+        <a (click)='indianBooks()'>Indian Best Sellers</a>
     </li>
     <li>
-        <a routerLink='/internationalBestSellers'>
+        <a (click)='internationalBooks()'>
             International Best Sellers
         </a>
     </li>
     <li>
-            <a routerLink='/greatFirstListens'>
+            <a (click)='greatFirstListens()'>
                 Great First Listens
             </a>
         </li>
 </ul>
+<ul type='none'>
+        <li class='bookItem' *ngFor='let book of books'>
+            <img [src]='book.imageUrl'> 
+            <title>{{book.name}}</title>
+            <p>Narrassted By:<i>{{book.author}}</i></p>
+            <p>Rating:<b>{{book.rating}}</b></p>
+        </li>
+    </ul>
 </div>
-<router-outlet></router-outlet>
+</div>
+

@@ -2,3 +2,20 @@
     display:inline-block;
     text-align: center;
 }
+.bookItem
+{
+    display: inline;
+    float: left;
+    margin:5px;
+}
+.heading
+{
+    text-align:center;
+    display:inline-block;
+}
+.flex-container
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}

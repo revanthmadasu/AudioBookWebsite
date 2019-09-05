@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AudioBookWebsite</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+
+        .flex-container
+        {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .flex-container .stepWithImageAndText
+        {
+            display: flex;
+            justify-content: center;
+            flex-direction:column;
+            padding:10px;
+        }
+        .flex-container .startTrailSection
+        {
+            display: flex;
+            justify-content: center;
+            flex-direction:column;
+            padding:10px;
+        }
+        /*.howToStart
+        {
+            position: relative;
+            display: :flex;
+            align-content: center;
+        }*/
+        .startingSteps
+        {
+            display: flex;
+            align-self:center;
+        }
+        .heading{
+            display:block;
+            text-align: center;
+        }
+        .stepWithImageAndText
+        {
+            position: relative;
+        }
+        .stepItem{
+            display:inline-block;
+        }
+        .stepImage{
+            position: relative;
+            text-align: center;
+        }
+        .button
+        {
+            background-color:#f2b233;
+            width:5cm;
+            height:1cm;
+            text-align: center;
+            padding:4px;
+            border:0mm;
+            border-radius: 4px;
+            align-content: center
+        }
+        .buttonDescription
+        {
+            font-size: 3mm;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container howToStart">
+        <div class="heading">
+            <h2>How To Start?</h2>
+        </div>
+        <div class='startingSteps'>
+            <ul class='list-inline stepItems'>
+                <li class='stepItem'>
+                    <div class='stepWithImageAndText'>
+                        <img src='https://m.media-amazon.com/images/G/01/Audible/en_US/images/creative/landing/020_AryaAnon_icon_1_test._CB1507759313_.svg' class='stepImage'>
+                        <p>Log in securely with your Amazon account.</p>
+                    </div>
+                </li>
+                <li class='stepItem'>
+                        <div class='stepWithImageAndText'>
+                            <img src='https://m.media-amazon.com/images/G/01/Audible/en_US/images/creative/landing/020_AryaAnon_icon_2_text._CB1507767166_.svg' class='stepImage'>
+                            <p>Sign up for a free 30-day trial. Your first audiobook is free.</p>
+                        </div>
+                </li>
+                <li class='stepItem'>
+                        <div class='flex-container stepWithImageAndText'>
+                            <img src='https://m.media-amazon.com/images/G/01/Audible/en_US/images/creative/landing/020_AryaAnon_icon_3_text._CB1507767166_.svg' class='stepImage'>
+                            <p>Download the free Audible app and start listening!</p>
+                        </div>
+                </li>
+            </ul>
+        </div>
+        <div class='flex-container startTrailSection'>
+            <button class="button">Start your free trial now</button>
+            <p class='buttonDescription'>₹199 per month after 30-day trial. Cancel anytime.</p>
+        </div>
+    </div>
+</body>
+</html>
